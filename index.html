@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <title>To Do List</title>
-</head>
-<body>
-    <div class="container">
-        <form action="#" class="form">
-            <h1>To Do List</h1>
-            <div class="input-area">
-                <input type="text" class="input">
-                <button class="add-btn">ADD</button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Todo List </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>Yapilacaklar Listesi</header>
+      <section class="todo-add">
+        <input type="text" id="todo-input" placeholder="Add New Todo..." />
+        <button type="submit" id="todo-button">Add</button>
+      </section>
 
-        </form>
-        <ul>
-            <div class="list">
-                <li class="task">odevler</li>
-                <button class="delete-btn">X</button>
-            </div>
-            <div class="list">
-                <li class="task">odevler</li>
-                <button class="delete-btn">X</button>
-            </div>
-        </ul>
-        <footer>
-            <p>bugun <span id="task-count">0</span> işin var.</p>
-
-        </footer>
-    </div>
-    <script src="./app.js"></script>
-</body>
+      <section class="todos">
+        <ul id="todo-list"></ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+    <!-- <script src="app_localStorage.js"></script> -->
+  </body>
 </html>
